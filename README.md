@@ -3,9 +3,6 @@
 - 🌱 I’m currently learning ... [REDACTED]
 - 💞️ I’m looking to collaborate on ... art, esp nostalgic hip hop, graffiti, cyber punk cultures intersecting with nature
 - 📫 How to reach me ... kennfth@proton.me
-- 😄 Pronouns: ... ai/lu
-- ⚡ Fun fact: ... do you know the human head weighs 8 pounds?
-
 <!---
 kennfth/kennfth is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
