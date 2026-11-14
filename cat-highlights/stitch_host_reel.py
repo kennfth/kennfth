@@ -63,7 +63,7 @@ STYLE = {
         "fontcolor": "0x9BE7FF",
         "boxcolor": "0x062430@0.82",
         "x": "w-tw-48",
-        "y": "40",
+        "y": "104",
     },
     "comment": {
         "fontsize": 36,

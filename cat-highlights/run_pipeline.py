@@ -17,6 +17,13 @@ def main() -> int:
     parser.add_argument("--out", type=Path, default=ROOT / "output")
     parser.add_argument("--threshold", type=float, default=0.25)
     parser.add_argument("--stride", type=int, default=1)
+    parser.add_argument(
+        "--timeline",
+        type=Path,
+        default=None,
+        help="segment times for captioning a stitched reel",
+    )
+    parser.add_argument("--skip-caption", action="store_true")
     args = parser.parse_args()
     videos = args.videos
     if not videos:
@@ -35,6 +42,19 @@ def main() -> int:
             [py, str(ROOT / "detect_cats.py"), str(video), "--out", str(out), "--stride", str(args.stride)],
             [py, str(ROOT / "make_highlights.py"), str(video), "--out", str(out)],
         ]
+        if not args.skip_caption:
+            steps.append(
+                [
+                    py,
+                    str(ROOT / "caption_frames.py"),
+                    "caption",
+                    str(video),
+                    "--out",
+                    str(out),
+                    "--timeline",
+                    str(args.timeline) if args.timeline else str(out / "timeline.json"),
+                ]
+            )
         for cmd in steps:
             print("+", " ".join(cmd), flush=True)
             proc = subprocess.run(cmd)
