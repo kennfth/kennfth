@@ -1,0 +1,7 @@
+# orange_cat_05.mp4
+commentary: template
+
+[0:00.7] That was not a still frame.  (motion_spike, 0.03-1.83s, highlights/hl_01_motion_spike_0.03-1.83.mp4)
+[0:03.5] The orange one breaks the pose.  (motion_spike, 2.80-4.60s, highlights/hl_02_motion_spike_2.80-4.60.mp4)
+[0:07.1] That was not a still frame.  (motion_spike, 6.37-8.17s, highlights/hl_03_motion_spike_6.37-8.17.mp4)
+[0:09.8] The orange one breaks the pose.  (motion_spike, 9.13-10.93s, highlights/hl_04_motion_spike_9.13-10.93.mp4)

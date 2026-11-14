@@ -1,0 +1,70 @@
+{
+  "video": "test_videos/orange_cat_03.mp4",
+  "events_file": "output/orange_cat_03/events.json",
+  "duration_sec": 30.633,
+  "commentary_source": "template",
+  "events": [
+    {
+      "type": "motion_spike",
+      "time": 19.267,
+      "score": 0.086,
+      "track_id": 2,
+      "detail": "track speed 207px/s",
+      "host_line": "[0:19.3] The orange one breaks the pose.",
+      "commentary_source": "template"
+    },
+    {
+      "type": "motion_spike",
+      "time": 30.0,
+      "score": 0.085,
+      "track_id": 11,
+      "detail": "track speed 204px/s",
+      "host_line": "[0:30.0] That was not a still frame.",
+      "commentary_source": "template"
+    },
+    {
+      "type": "exit",
+      "time": 30.567,
+      "score": 0.62,
+      "track_id": 11,
+      "detail": "left via the left edge",
+      "host_line": "[0:30.6] Exit, pursued by nothing. The cat is done with the shot.",
+      "commentary_source": "template"
+    }
+  ],
+  "clips": [
+    {
+      "start": 18.567,
+      "end": 20.367,
+      "time": 19.267,
+      "primary_type": "motion_spike",
+      "types": [
+        "motion_spike"
+      ],
+      "score": 0.086,
+      "track_id": 2,
+      "detail": "track speed 207px/s",
+      "file": "highlights/hl_01_motion_spike_18.57-20.37.mp4",
+      "bytes": 63423,
+      "host_line": "[0:19.3] That was not a still frame.",
+      "commentary_source": "template"
+    },
+    {
+      "start": 29.25,
+      "end": 30.633,
+      "time": 30.567,
+      "primary_type": "exit",
+      "types": [
+        "exit",
+        "motion_spike"
+      ],
+      "score": 0.62,
+      "track_id": 11,
+      "detail": "left via the left edge",
+      "file": "highlights/hl_02_exit_29.25-30.63.mp4",
+      "bytes": 64210,
+      "host_line": "[0:30.6] Exit, pursued by nothing. The cat is done with the shot.",
+      "commentary_source": "template"
+    }
+  ]
+}

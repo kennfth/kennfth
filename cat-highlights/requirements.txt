@@ -1,0 +1,6 @@
+# PyTorch is installed first so CPU machines do not pull the CUDA wheel.
+#   python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# GPU machines can skip that and let ultralytics install the matching torch build.
+ultralytics>=8.3.0
+opencv-python>=4.10.0
+lap>=0.5.12

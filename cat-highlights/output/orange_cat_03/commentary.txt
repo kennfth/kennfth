@@ -1,0 +1,5 @@
+# orange_cat_03.mp4
+commentary: template
+
+[0:19.3] That was not a still frame.  (motion_spike, 18.57-20.37s, highlights/hl_01_motion_spike_18.57-20.37.mp4)
+[0:30.6] Exit, pursued by nothing. The cat is done with the shot.  (exit, motion_spike, 29.25-30.63s, highlights/hl_02_exit_29.25-30.63.mp4)

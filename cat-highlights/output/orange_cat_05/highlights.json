@@ -1,0 +1,119 @@
+{
+  "video": "test_videos/orange_cat_05.mp4",
+  "events_file": "output/orange_cat_05/events.json",
+  "duration_sec": 15.2,
+  "commentary_source": "template",
+  "events": [
+    {
+      "type": "motion_spike",
+      "time": 0.733,
+      "score": 0.185,
+      "track_id": 1,
+      "detail": "track speed 444px/s",
+      "host_line": "[0:00.7] The orange one breaks the pose.",
+      "commentary_source": "template"
+    },
+    {
+      "type": "motion_spike",
+      "time": 3.5,
+      "score": 0.246,
+      "track_id": 1,
+      "detail": "track speed 591px/s",
+      "host_line": "[0:03.5] That was not a still frame.",
+      "commentary_source": "template"
+    },
+    {
+      "type": "motion_spike",
+      "time": 5.467,
+      "score": 0.185,
+      "track_id": 1,
+      "detail": "track speed 444px/s",
+      "host_line": "[0:05.5] The orange one breaks the pose.",
+      "commentary_source": "template"
+    },
+    {
+      "type": "motion_spike",
+      "time": 7.067,
+      "score": 0.095,
+      "track_id": 1,
+      "detail": "track speed 229px/s",
+      "host_line": "[0:07.1] That was not a still frame.",
+      "commentary_source": "template"
+    },
+    {
+      "type": "motion_spike",
+      "time": 9.833,
+      "score": 0.178,
+      "track_id": 1,
+      "detail": "track speed 426px/s",
+      "host_line": "[0:09.8] The orange one breaks the pose.",
+      "commentary_source": "template"
+    }
+  ],
+  "clips": [
+    {
+      "start": 0.033,
+      "end": 1.833,
+      "time": 0.733,
+      "primary_type": "motion_spike",
+      "types": [
+        "motion_spike"
+      ],
+      "score": 0.185,
+      "track_id": 1,
+      "detail": "track speed 444px/s",
+      "file": "highlights/hl_01_motion_spike_0.03-1.83.mp4",
+      "bytes": 56146,
+      "host_line": "[0:00.7] That was not a still frame.",
+      "commentary_source": "template"
+    },
+    {
+      "start": 2.8,
+      "end": 4.6,
+      "time": 3.5,
+      "primary_type": "motion_spike",
+      "types": [
+        "motion_spike"
+      ],
+      "score": 0.246,
+      "track_id": 1,
+      "detail": "track speed 591px/s",
+      "file": "highlights/hl_02_motion_spike_2.80-4.60.mp4",
+      "bytes": 64024,
+      "host_line": "[0:03.5] The orange one breaks the pose.",
+      "commentary_source": "template"
+    },
+    {
+      "start": 6.367,
+      "end": 8.167,
+      "time": 7.067,
+      "primary_type": "motion_spike",
+      "types": [
+        "motion_spike"
+      ],
+      "score": 0.095,
+      "track_id": 1,
+      "detail": "track speed 229px/s",
+      "file": "highlights/hl_03_motion_spike_6.37-8.17.mp4",
+      "bytes": 61071,
+      "host_line": "[0:07.1] That was not a still frame.",
+      "commentary_source": "template"
+    },
+    {
+      "start": 9.133,
+      "end": 10.933,
+      "time": 9.833,
+      "primary_type": "motion_spike",
+      "types": [
+        "motion_spike"
+      ],
+      "score": 0.178,
+      "track_id": 1,
+      "detail": "track speed 426px/s",
+      "file": "highlights/hl_04_motion_spike_9.13-10.93.mp4",
+      "bytes": 60514,
+      "host_line": "[0:09.8] The orange one breaks the pose.",
+      "commentary_source": "template"
+    }
+  ]
+}
