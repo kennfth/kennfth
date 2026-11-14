@@ -8,3 +8,4 @@ runs/
 test_videos/*.mp4
 test_videos/*.part
 *.log
+work/

@@ -81,3 +81,16 @@ For each video, under `output/<name>/`:
 Jumps are a fast rise of the whole box. A fail is that rise coming back down. An exit is a track that leaves through the edge of the frame; a re-entry is a new track that comes back in from an edge just after one. Motion spikes are peaks in track speed measured over about a fifth of a second, so a one-frame box twitch does not count. Multi-cat chaos needs two separated cats, each at confidence 0.6 or better. Touching halves of one cat (a branch can split a single animal) stay one cat, and a low-confidence box on something that is not a cat does not count.
 
 Commentary uses a local Qwen-VL model only when `ollama list` already shows one. Otherwise `commentary_source` is `template`.
+
+## Stitched host reel
+
+`stitch_host_reel.py` joins 3–5 short clips with a 0.4s black beat, then burns three text lines onto the file the pipeline already analyzed. It does not add a voice track.
+
+```bash
+python stitch_host_reel.py stitch --manifest work/manifest.json --work work --out work/stitched-plain.mp4 --timeline work/timeline.json
+python run_pipeline.py work/stitched-plain.mp4 --out work/output
+python stitch_host_reel.py overlay --video work/stitched-plain.mp4 --analysis work/output/stitched-plain --timeline work/timeline.json --work work --out /path/to/reel.mp4
+python stitch_host_reel.py self-test
+```
+
+ENTERTAINMENT marks a rise in the motion score or the scene score. COMMENT is the pipeline host line at the event. NEXT is a short anticipation line from that same event, placed 1.1s earlier. Source mp4s, the stitch, and the burned reel belong under `work/` or outside the repo. `work/` is gitignored.
