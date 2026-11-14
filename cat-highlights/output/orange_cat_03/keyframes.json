@@ -1,0 +1,24 @@
+{
+  "video": "test_videos/orange_cat_03.mp4",
+  "width": 540,
+  "height": 960,
+  "fps": 30.0,
+  "duration_sec": 30.633,
+  "threshold": 0.25,
+  "selection": "scene_peaks",
+  "scene_frames_scored": 919,
+  "keyframes": [
+    {
+      "file": "keyframes/kf_001.jpg",
+      "frame": 13,
+      "time": 0.433,
+      "scene_score": 0.047
+    },
+    {
+      "file": "keyframes/kf_002.jpg",
+      "frame": 100,
+      "time": 3.333,
+      "scene_score": 0.0523
+    }
+  ]
+}

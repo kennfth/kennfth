@@ -1,0 +1,30 @@
+{
+  "video": "test_videos/orange_cat_02.mp4",
+  "width": 960,
+  "height": 540,
+  "fps": 30.0,
+  "duration_sec": 23.0,
+  "threshold": 0.25,
+  "selection": "scene_peaks",
+  "scene_frames_scored": 690,
+  "keyframes": [
+    {
+      "file": "keyframes/kf_001.jpg",
+      "frame": 35,
+      "time": 1.167,
+      "scene_score": 0.0502
+    },
+    {
+      "file": "keyframes/kf_002.jpg",
+      "frame": 470,
+      "time": 15.667,
+      "scene_score": 0.0474
+    },
+    {
+      "file": "keyframes/kf_003.jpg",
+      "frame": 501,
+      "time": 16.7,
+      "scene_score": 0.0538
+    }
+  ]
+}

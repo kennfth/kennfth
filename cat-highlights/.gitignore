@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.pt
+weights/
+runs/
+.cache-src/
+test_videos/*.mp4
+test_videos/*.part
+*.log
