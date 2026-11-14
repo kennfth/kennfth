@@ -94,3 +94,15 @@ python stitch_host_reel.py self-test
 ```
 
 ENTERTAINMENT marks a rise in the motion score or the scene score. COMMENT is the pipeline host line at the event. NEXT is a short anticipation line from that same event, placed 1.1s earlier. Source mp4s, the stitch, and the burned reel belong under `work/` or outside the repo. `work/` is gitignored.
+
+## Keyframe captions
+
+`caption_frames.py` runs `Salesforce/blip-image-captioning-base` on CPU. It captions each file in `keyframes/` and one frame at each highlight time. Weights land in `weights/hf/` and are gitignored. `run_pipeline.py` calls this after the highlight step unless you pass `--skip-caption`. A stitched reel also needs `--timeline work/timeline.json`, because the caption step has to know which segment a frame sits in.
+
+```bash
+python caption_frames.py caption work/stitched-plain.mp4 --out work/output/stitched-plain --timeline work/timeline.json
+python caption_frames.py script work/stitched-plain.mp4 --analysis work/output/stitched-plain --timeline work/timeline.json --reel /path/to/reel.mp4 --rundown /path/to/script.md
+python caption_frames.py self-test
+```
+
+NEXT and COMMENT use the caption for that frame. The script does not add an action, a color, or a bird the caption did not say. "Orange" is kept only when the frame is in the door segment.
